@@ -112,7 +112,6 @@ export default function Menu() {
                             </li>
                         ))}
                     </ul>
-                    {/* copyright */}
                     <p className="hidden md:block text-xl">&copy; 2024 gawston.dev</p>
                     <div className="overflow-hidden">
                         <div className="socialLinks">
