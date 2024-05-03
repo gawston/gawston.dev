@@ -6,7 +6,7 @@ import Image from "next/image"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 
-import catdance from "../assets/catdance.gif"
+import cateating from "../assets/cateating.gif"
 
 const menuLinks = [
     { path: "/", label: "Home" },
@@ -33,7 +33,7 @@ export default function Menu() {
 
     useGSAP(() => {
         gsap.set(".menuLinkItems", { y: 90 });
-        gsap.set(".socialLinks", { y: 50 });
+        gsap.set(".socialLinks", { y: 90 });
         tl.current = gsap
         .timeline({ paused: true })
         .to(".menuOverlay", { 
@@ -50,7 +50,7 @@ export default function Menu() {
         })
         .to(".socialLinks", { 
             y: 0,
-            duration: 1,
+            duration: 1.25,
             stagger: 0.1,
             ease: "power4.inOut",
             delay: -0.75,
@@ -79,7 +79,7 @@ export default function Menu() {
                 </div>
             </div>
             {/* menu overlay */}
-            <div className="menuOverlay fixed left-0 w-full h-screen bg-[#c5fb45] z-[2]">
+            <div className="menuOverlay fixed left-0 w-full h-screen bg-amber-400 z-[2]">
                 {/* nav in menu overlay */}
                 <div className="w-full p-8 flex justify-between items-center">
                     <Link href="/" className="text-2xl md:text-3xl" onClick={toggleMenu}>gawston.dev</Link>
@@ -95,7 +95,7 @@ export default function Menu() {
                         <div key={index} className="overflow-hidden">
                             <div className="menuLinkItems">
                                 <Link href={link.path} onClick={toggleMenu}>
-                                    <p className="text-6xl md:text-8xl border-b-2 border-[#c5fb45] hover:border-black transition-all">{link.label} </p>
+                                    <p className="text-6xl md:text-8xl border-b-2 border-amber-400 hover:border-black transition-all">{link.label} </p>
                                 </Link>
                             </div>
                         </div>
@@ -116,7 +116,7 @@ export default function Menu() {
                     <p className="hidden md:block text-xl">&copy; 2024 gawston.dev</p>
                     <div className="overflow-hidden">
                         <div className="socialLinks">
-                            <Image src={catdance} alt="cat dance" width={100} height={100} />
+                            <Image src={cateating} alt="cateating dance" width={130} height={130} />
                         </div>
                     </div>
                 </div>
