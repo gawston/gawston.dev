@@ -10,7 +10,7 @@ export default function Home() {
         <div className="text-xl md:text-3xl">gawston - Portfolio.</div>
         <div className="text-7xl md:text-9xl">Junior Developer.</div>
         <div className="text-sm md:text-xl mt-2">
-          Hi, I'm Naruenat Khamwaree. I'm interested in web development and design. 
+          Hi, I&apos;m Naruenat Khamwaree. I&apos;m interested in web development and design. 
         </div>
       </div>
       <div className="container mx-auto grid lg:grid-cols-3 gap-5 p-4 lg:p-6" id="work">
