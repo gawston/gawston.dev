@@ -17,7 +17,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
 }
 
-/* select color */
 ::selection {
-  background: #fbbf24;
+  background: #ffffff;
+  color: black;
 }

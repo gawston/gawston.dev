@@ -70,8 +70,8 @@ export default function Menu() {
     return (
         <div className="w-full" ref={menuContainer}>
             {/* nav */}
-            <div className="fixed top-0 w-full p-8 flex justify-between items-center">
-                <Link href="/" className="text-2xl md:text-3xl">gawston.dev</Link>
+            <div className="fixed top-0 w-full p-6 md:p-8 border-gray-700 border-b-[1px] md:border-b-0 flex justify-between items-center text-white bg-black bg-opacity-80 backdrop-blur-md md:backdrop-blur-0 md:bg-transparent">
+                <Link href="/" className="text-2xl md:text-3xl">gawston</Link>
                 <div className="cursor-pointer" onClick={toggleMenu}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-8 h-8 md:w-10 md:h-10">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
@@ -79,10 +79,10 @@ export default function Menu() {
                 </div>
             </div>
             {/* menu overlay */}
-            <div className="menuOverlay fixed left-0 w-full h-screen bg-amber-400 z-[2]">
+            <div className="menuOverlay fixed left-0 w-full h-screen bg-[#80FF00] z-[2]">
                 {/* nav in menu overlay */}
-                <div className="w-full p-8 flex justify-between items-center">
-                    <Link href="/" className="text-2xl md:text-3xl" onClick={toggleMenu}>gawston.dev</Link>
+                <div className="w-full p-6 md:p-8 flex justify-between items-center">
+                    <Link href="/" className="text-2xl md:text-3xl" onClick={toggleMenu}>gawston</Link>
                     <div className="cursor-pointer" onClick={toggleMenu}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-8 h-8 md:w-10 md:h-10">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -95,7 +95,7 @@ export default function Menu() {
                         <div key={index} className="overflow-hidden">
                             <div className="menuLinkItems">
                                 <Link href={link.path} onClick={toggleMenu}>
-                                    <p className="text-6xl md:text-8xl border-b-2 border-amber-400 hover:border-black transition-all">{link.label} </p>
+                                    <p className="text-6xl md:text-8xl border-b-2 border-[#80FF00] hover:border-black transition-all">{link.label} </p>
                                 </Link>
                             </div>
                         </div>
@@ -107,12 +107,17 @@ export default function Menu() {
                         {socialLinks.map((link, index) => (
                             <li className="overflow-hidden hover:underline" key={index}>
                                 <div className="socialLinks tracking-wideest">
-                                    <Link href={link.path} target="_blank">{link.label} &#8599;</Link>
+                                    <Link href={link.path} target="_blank" className="flex items-center">
+                                        {link.label}
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                        </svg>
+                                    </Link>
                                 </div>
                             </li>
                         ))}
                     </ul>
-                    <p className="hidden md:block text-xl">&copy; 2024 gawston.dev</p>
+                    <p className="hidden md:block text-xl">&copy; 2024 gawston</p>
                     <div className="overflow-hidden">
                         <div className="socialLinks">
                             <Image src={cateating} alt="cateating dance" width={130} height={130} />
