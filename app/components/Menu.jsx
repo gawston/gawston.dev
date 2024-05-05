@@ -79,7 +79,7 @@ export default function Menu() {
                 </div>
             </div>
             {/* menu overlay */}
-            <div className="menuOverlay fixed left-0 w-full h-screen bg-[#80FF00] z-[3]">
+            <div className="menuOverlay fixed left-0 w-full h-screen bg-[#80FF00] z-[3] border-b-8 border-black">
                 {/* nav in menu overlay */}
                 <div className="w-full p-6 md:p-8 flex justify-between items-center">
                     <Link href="/" className="text-2xl md:text-3xl" onClick={toggleMenu}>gawston</Link>
