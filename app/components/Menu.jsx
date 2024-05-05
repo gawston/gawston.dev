@@ -46,7 +46,7 @@ export default function Menu() {
             duration: 1,
             stagger: 0.1,
             ease: "power4.inOut",
-            delay: -0.75,
+            delay: -1,
         })
         .to(".socialLinks", { 
             y: 0,
@@ -79,7 +79,7 @@ export default function Menu() {
                 </div>
             </div>
             {/* menu overlay */}
-            <div className="menuOverlay fixed left-0 w-full h-screen bg-[#80FF00] z-[3] border-b-8 border-black">
+            <div className="menuOverlay fixed left-0 w-full h-screen bg-black text-gray-100 z-[3]">
                 {/* nav in menu overlay */}
                 <div className="w-full p-6 md:p-8 flex justify-between items-center">
                     <Link href="/" className="text-2xl md:text-3xl" onClick={toggleMenu}>gawston</Link>
@@ -92,10 +92,10 @@ export default function Menu() {
                 {/* menu */}
                 <div className="container mx-auto p-4">
                     {menuLinks.map((link, index) => (
-                        <div key={index} className="overflow-hidden">
+                        <div key={index} className="overflow-hidden hover:translate-x-10 underline decoration-black hover:decoration-gray-100 transition-all duration-500">
                             <div className="menuLinkItems">
                                 <Link href={link.path} onClick={toggleMenu}>
-                                    <p className="text-6xl md:text-8xl border-b-2 border-[#80FF00] hover:border-black transition-all">{link.label} </p>
+                                    <p className="text-6xl md:text-8xl">{link.label} </p>
                                 </Link>
                             </div>
                         </div>
