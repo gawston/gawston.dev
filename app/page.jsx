@@ -1,28 +1,46 @@
 import Link from "next/link"
 import Image from "next/image"
 
-import avatar from "./assets/avatar.jpg"
+import coolfun from "./assets/coolfun.gif"
 
 export default function Home() {
   return (
-    <div className="text-white bg-black">
-      <div className="container min-h-[70vh] mx-auto flex flex-col justify-center items-center text-center">
-        <div className="text-xl md:text-3xl">gawston - Portfolio.</div>
-        <div className="text-7xl md:text-9xl">Junior Developer.</div>
-        <div className="text-sm md:text-xl mt-2">
-          Hi, I&apos;m Naruenat Khamwaree. I&apos;m interested in web development and design. 
+    <div>
+      <div className="container min-h-screen mx-auto flex flex-col justify-center items-center text-center">
+        <div className="text-5xl md:text-7xl lg:text-9xl font-semibold">
+          Web developer and Graphic Designer.
         </div>
+        <Link href="/#work" className="absolute bottom-12 flex flex-col items-center hover:text-[#80FF00] transition-all">
+          <div className="-space-y-5 animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+              <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+              <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </div>
+          <p className="text-xl">Scroll down</p>
+        </Link>
       </div>
-      <div className="container mx-auto grid lg:grid-cols-3 gap-5 p-4 lg:p-6" id="work">
-        <div className="bg-gray-900 h-[300px] rounded-xl">1</div>
-        <div className="bg-gray-900 h-[300px] rounded-xl">1</div>
-        <div className="bg-gray-900 h-[300px] rounded-xl">1</div>
-        <div className="bg-gray-900 h-[300px] rounded-xl">1</div>
-        <div className="bg-gray-900 h-[300px] rounded-xl">1</div>
-        <div className="bg-gray-900 h-[300px] rounded-xl">1</div>
-        <div className="bg-gray-900 h-[300px] rounded-xl">1</div>
-        <div className="bg-gray-900 h-[300px] rounded-xl">1</div>
-        <div className="bg-gray-900 h-[300px] rounded-xl">1</div>
+      <div className="container mx-auto grid lg:grid-cols-2 gap-5 p-4 lg:p-6" id="work">
+        <div className="bg-white h-[700px] flex items-center justify-center overflow-hidden">
+          <Image src={coolfun} alt="cateating dance" className="object-cover" width={500} />
+        </div>
+        <div className="bg-white h-[700px] flex items-center justify-center overflow-hidden">
+          <Image src={coolfun} alt="cateating dance" className="object-cover" width={500} />
+        </div>
+        <div className="bg-white h-[700px] flex items-center justify-center overflow-hidden">
+          <Image src={coolfun} alt="cateating dance" className="object-cover" width={500} />
+        </div>
+        <div className="bg-white h-[700px] flex items-center justify-center overflow-hidden">
+          <Image src={coolfun} alt="cateating dance" className="object-cover" width={500} />
+        </div>
+        <div className="bg-white h-[700px] flex items-center justify-center overflow-hidden">
+          <Image src={coolfun} alt="cateating dance" className="object-cover" width={500} />
+        </div>
+        <div className="bg-white h-[700px] flex items-center justify-center overflow-hidden">
+          <Image src={coolfun} alt="cateating dance" className="object-cover" width={500} />
+        </div>
       </div>
       <div className="container min-h-screen mx-auto flex flex-col items-center justify-center" id="contact">
         <p className="text-5xl">contact section</p>

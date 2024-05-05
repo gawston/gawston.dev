@@ -9,6 +9,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #f3f4f6;
+}
+
 .menuLinkItems {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
@@ -18,6 +22,6 @@
 }
 
 ::selection {
-  background: #ffffff;
-  color: black;
+  background: #000000;
+  color: #80FF00;
 }

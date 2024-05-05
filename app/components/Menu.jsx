@@ -70,7 +70,7 @@ export default function Menu() {
     return (
         <div className="w-full" ref={menuContainer}>
             {/* nav */}
-            <div className="fixed top-0 w-full p-6 md:p-8 border-gray-700 border-b-[1px] md:border-b-0 flex justify-between items-center text-white bg-black bg-opacity-80 backdrop-blur-md md:backdrop-blur-0 md:bg-transparent">
+            <div className="fixed top-0 w-full p-6 md:p-8 flex justify-between items-center bg-gray-100 md:bg-transparent z-[2]">
                 <Link href="/" className="text-2xl md:text-3xl">gawston</Link>
                 <div className="cursor-pointer" onClick={toggleMenu}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-8 h-8 md:w-10 md:h-10">
@@ -79,7 +79,7 @@ export default function Menu() {
                 </div>
             </div>
             {/* menu overlay */}
-            <div className="menuOverlay fixed left-0 w-full h-screen bg-[#80FF00] z-[2]">
+            <div className="menuOverlay fixed left-0 w-full h-screen bg-[#80FF00] z-[3]">
                 {/* nav in menu overlay */}
                 <div className="w-full p-6 md:p-8 flex justify-between items-center">
                     <Link href="/" className="text-2xl md:text-3xl" onClick={toggleMenu}>gawston</Link>
