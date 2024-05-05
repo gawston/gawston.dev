@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 import coolfun from "./assets/coolfun.gif"
-
+ 
 export default function Home() {
   return (
     <div>
