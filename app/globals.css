@@ -20,6 +20,14 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
 }
 
+.preLoadContainer {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.coverText {
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+}
+
 ::selection {
   color: #000;
   background: #80FF00;

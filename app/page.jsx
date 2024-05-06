@@ -2,24 +2,16 @@
 
 import Link from "next/link"
 import Image from "next/image"
-
 import coolfun from "./assets/coolfun.gif"
 
 export default function Home() {
+
   return (
     <div>
       <div className="container min-h-screen mx-auto flex flex-col justify-center items-center text-center">
-        <p className="text-5xl md:text-7xl lg:text-9xl font-semibold">
-          Web developer and Graphic Designer.
+        <p className="heroText text-5xl md:text-7xl lg:text-9xl font-semibold">
+          Web developer and Graphic designer.
         </p>
-        <div className="absolute bottom-0 w-full p-8 hidden lg:flex justify-between items-end">
-          <p className="text-xl text-left">
-            Hi there, I&apos;m gawston. <br/> This is my portfolio website.
-          </p>
-          <p className="text-xl text-right">
-            This website made with <br/> Next.js, GSAP, Lenis and TailwindCSS.
-          </p>
-        </div>
         <div className="absolute bottom-12 flex flex-col items-center">
           <div className="-space-y-5 animate-bounce">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
