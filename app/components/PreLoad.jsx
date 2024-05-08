@@ -43,7 +43,7 @@ export default function PreLoad() {
         <div ref={preLoader}>
             <div className="preLoadContainer fixed top-0 w-full h-screen bg-black z-[999] flex justify-center items-center">
                 <div className="overflow-hidden p-4">
-                    <div className="text-7xl font-semibold text-white flex items-center">
+                    <div className="text-7xl font-semibold text-gray-100 flex items-center">
                         <p className="preLoadText translate-y-[100px]">g</p>
                         <p className="preLoadText translate-y-[100px]">a</p>
                         <p className="preLoadText translate-y-[100px]">w</p>

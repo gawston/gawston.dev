@@ -4,6 +4,7 @@ import "./globals.css";
 import Menu from "./components/Menu";
 import SmoothScroll from "./components/SmoothScroll";
 import PreLoad from "./components/PreLoad";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <SmoothScroll>
           <Menu />
           {children}
+          <Footer />
         </SmoothScroll>
       </body>
     </html>
