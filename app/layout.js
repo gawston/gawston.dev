@@ -10,7 +10,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "gawston | Naruenat Khamwaree",
-  description: "ไม่รู้จะใส่อะไร เอาไว้ก่อนล้ากัน" 
+  description: "ไม่รู้จะใส่อะไร เอาไว้ก่อนล้ากัน",
+  image: "/assets/og-image.jpg",
+  url: "https://gawston.vercel.app",
+  type: "website",
 };
 
 export default function RootLayout({ children }) {
