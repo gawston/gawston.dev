@@ -1,13 +1,11 @@
 export default function Hero() {
     return (
         <div className="container min-h-screen mx-auto flex flex-col justify-center items-center text-center">
-            <p className="text-6xl md:text-8xl lg:text-[10rem] font-semibold">
-            {/* Web developer and Graphic designer. */}
+            <p className="text-5xl md:text-8xl lg:text-[10rem] font-bold">
             Naruenat <br /> Khamwaree
             </p>
-            <p className="text-xl md:text-3xl">
-                {/* Web Developer */}
-                yang mai sej najub
+            <p className="text-md md:text-2xl">
+                I&apos;m passionate about web development and I&apos;m always looking for new opportunities.
             </p>
             <div className="absolute bottom-12 flex flex-col items-center">
             <div className="-space-y-5 animate-bounce">
