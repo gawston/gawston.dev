@@ -25,6 +25,7 @@ body {
 }
 
 ::selection {
-  color: #000;
-  background: #80FF00;
+  color: #fff;
+  /* background: #80FF00; */
+  background: #e11d48;
 }
