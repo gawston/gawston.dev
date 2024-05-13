@@ -6,7 +6,7 @@ export default function About() {
     return (
         <div className="container mx-auto min-h-screen grid md:grid-cols-2">
             <div className="mt-20 md:mt-0 p-4 md:sticky top-0 w-full md:h-screen flex flex-col items-center md:justify-center gap-4">
-                <Image src={aboutpic} alt="test" width={450} className="object-cover hover:scale-90 transition-all duration-1000 hover:saturate-150" draggable="false"/>
+                <Image src={aboutpic} alt="test" width={450} className="object-cover md:hover:scale-90 transition-all duration-1000 md:hover:saturate-150" draggable="false"/>
                 <div className="text-center">
                 <p className="text-xl">Naruenat Khamwaree</p>
                 <p className="text-md">IT | King Mongkut&apos;s University of Technology North Bangkok</p>
