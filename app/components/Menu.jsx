@@ -70,7 +70,9 @@ export default function Menu() {
     return (
         <div className="w-full" ref={menuContainer}>
             {/* nav */}
-            <div className="fixed top-0 w-full p-6 md:p-8 flex justify-between items-center bg-gray-100 bg-opacity-90 backdrop-blur-[12px] md:backdrop-blur-0 md:bg-transparent z-[2]">
+            <div className="fixed top-0 w-full p-6 md:p-8 flex justify-between items-center bg-gray-100 bg-opacity-90 backdrop-blur-[12px] md:backdrop-blur-0 md:bg-transparent z-[2]"
+            style={{WebkitBackdropFilter: "blur(12px)"}}
+            >
                 <Link href="/" className="text-2xl md:text-3xl">gawston</Link>
                 <div className="cursor-pointer" onClick={toggleMenu}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-8 h-8 md:w-10 md:h-10">
